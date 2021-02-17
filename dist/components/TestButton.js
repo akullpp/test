@@ -21,9 +21,10 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var TestButton = (0, _styledComponents["default"])(_core.Button)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  color: red;\n"])));
 
-var _default = function _default() {
+var _default = function _default(_ref) {
+  var text = _ref.text;
   return /*#__PURE__*/(0, _jsxRuntime.jsx)(TestButton, {
-    children: "Hello World"
+    children: text
   });
 };
 

@@ -6,7 +6,8 @@ import {
   DialogContentText,
   DialogTitle,
 } from "@material-ui/core";
-import TestButton from "./TestButton";
+
+import TestButton from "@bit/akull.test.test-button";
 
 export default ({ open, toggleDialog }) => (
   <Dialog open={open} onClose={toggleDialog}>
@@ -22,9 +23,7 @@ export default ({ open, toggleDialog }) => (
     </DialogContent>
 
     <DialogActions>
-      <TestButton onClick={toggleDialog} color="primary">
-        Disagree
-      </TestButton>
+      <TestButton onClick={toggleDialog}>Disagree</TestButton>
 
       <TestButton onClick={toggleDialog} color="primary" autoFocus>
         Agree

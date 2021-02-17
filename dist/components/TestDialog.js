@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _core = require("@material-ui/core");
 
-var _TestButton = _interopRequireDefault(require("./TestButton"));
+var _akullTest = _interopRequireDefault(require("@bit/akull.test.test-button"));
 
 var _jsxRuntime = require("react/jsx-runtime");
 
@@ -28,11 +28,10 @@ var _default = function _default(_ref) {
         children: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores quasi rem corrupti labore veritatis! Laborum quos expedita quidem ullam maxime, cumque ipsum blanditiis voluptate, beatae sed eaque adipisci saepe unde."
       })
     }), /*#__PURE__*/(0, _jsxRuntime.jsxs)(_core.DialogActions, {
-      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_TestButton["default"], {
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_akullTest["default"], {
         onClick: toggleDialog,
-        color: "primary",
         children: "Disagree"
-      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_TestButton["default"], {
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_akullTest["default"], {
         onClick: toggleDialog,
         color: "primary",
         autoFocus: true,
