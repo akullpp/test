@@ -7,8 +7,14 @@ import {
   DialogTitle,
 } from "@material-ui/core";
 
-import TestButton from "@bit/akull.test.test-button";
+import TestButton from "./TestButton";
 
+/**
+ *  Simple dialog that allows to cancel or accept.
+ *
+ *  @param {boolean} open - Whether the component is shown or not
+ *  @param {function} toggleDialog - Toggles the display status of the component
+ */
 export default ({ open, toggleDialog }) => (
   <Dialog open={open} onClose={toggleDialog}>
     <DialogTitle>Confirm</DialogTitle>
@@ -23,11 +29,14 @@ export default ({ open, toggleDialog }) => (
     </DialogContent>
 
     <DialogActions>
-      <TestButton onClick={toggleDialog}>Disagree</TestButton>
+      <TestButton onClick={toggleDialog} color="secondary" text="Cancel" />
 
-      <TestButton onClick={toggleDialog} color="primary" autoFocus>
-        Agree
-      </TestButton>
+      <TestButton
+        onClick={toggleDialog}
+        color="primary"
+        text="Confirm"
+        autoFocus
+      />
     </DialogActions>
   </Dialog>
 );
